@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Arquivos da Amazônia: pesquisa, história, biodiversidade, povos e memória amazônica.">
+  <title>Arquivos da Amazônia</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      background: #f5f3ec;
+      color: #24372c;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #173b2b;
+      color: white;
+      padding: 22px 7%;
+    }
+
+    .brand {
+      font-size: 27px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      color: #d0dfd1;
+      font-size: 13px;
+    }
+
+    nav {
+      background: #102c20;
+      padding: 13px 7%;
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 430px;
+      background:
+        linear-gradient(90deg, rgba(8,30,20,.85), rgba(8,30,20,.15)),
+        url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      display: flex;
+      align-items: center;
+      padding: 55px 8%;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 620px;
+    }
+
+    .hero small {
+      color: #d6e8c9;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 65px);
+      line-height: 1.1;
+      margin: 18px 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 520px;
+    }
+
+    section {
+      padding: 55px 8%;
+    }
+
+    .section-label {
+      color: #71856b;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin: 8px 0 20px;
+    }
+
+    .intro {
+      max-width: 760px;
+      font-size: 18px;
+    }
+
+    .categories {
+      background: #e7e9df;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      margin-top: 25px;
+    }
+
+    .category {
+      background: #fff;
+      padding: 22px 15px;
+      border-left: 4px solid #547653;
+      font-size: 17px;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 25px;
+    }
+
+    .article {
+      background: white;
+      padding-bottom: 20px;
+      box-shadow: 0 3px 14px #00000010;
+    }
+
+    .article img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .article h3,
+    .article p {
+      margin: 12px 17px;
+    }
+
+    .article h3 {
+      font-size: 21px;
+    }
+
+    .article p {
+      color: #59665d;
+      font-size: 14px;
+    }
+
+    .about {
+      background: #173b2b;
+      color: white;
+    }
+
+    .about p {
+      max-width: 750px;
+      font-size: 17px;
+    }
+
+    footer {
+      background: #102c20;
+      color: #d0dfd1;
+      text-align: center;
+      padding: 28px 15px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand">ARQUIVOS DA AMAZÔNIA</div>
+    <p>História, pesquisa, natureza e memória</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#materias">Matérias</a>
+    <a href="#categorias">Categorias</a>
+    <a href="#acervo">Acervo</a>
+    <a href="#sobre">Sobre o projeto</a>
+  </nav>
+
+  <main>
+    <div class="hero" id="inicio">
+      <div class="hero-content">
+        <small>Pesquisa e documentação independente</small>
+        <h1>Uma floresta de histórias para descobrir.</h1>
+        <p>Conhecer a Amazônia é também conhecer seus povos, suas transformações, sua biodiversidade e suas memórias.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="section-label">Nossa proposta</div>
+      <h2>Além da floresta, existem histórias.</h2>
+      <p class="intro">
+        O Arquivos da Amazônia é um projeto independente dedicado à pesquisa, à documentação e à divulgação de conhecimentos sobre a Amazônia. Nosso objetivo é investigar o passado, compreender o presente e preservar memórias para o futuro.
+      </p>
+    </section>
+
+    <section class="categories" id="categorias">
+      <div class="section-label">Explore nosso conteúdo</div>
+      <h2>Áreas de pesquisa</h2>
+      <div class="category-grid">
+        <div class="category">História</div>
+        <div class="category">Povos amazônicos</div>
+        <div class="category">Natureza</div>
+        <div class="category">Cultura</div>
+        <div class="category">Documentação</div>
+      </div>
+    </section>
+
+    <section id="materias">
+      <div class="section-label">Conhecimento em construção</div>
+      <h2>Matérias em destaque</h2>
+      <p>Em breve, nossas primeiras pesquisas estarão disponíveis aqui.</p>
+
+      <div class="articles">
+        <article class="article">
+          <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=800&q=80" alt="Vegetação da floresta amazônica">
+          <h3>A floresta e suas histórias</h3>
+          <p>Uma investigação sobre a relação entre a floresta e as sociedades humanas.</p>
+        </article>
+
+        <article class="article">
+          <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=80" alt="Vegetação e árvores">
+          <h3>Memória e território</h3>
+          <p>Conhecendo as histórias e as transformações dos territórios amazônicos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="acervo" class="categories">
+      <div class="section-label">Preservação do conhecimento</div>
+      <h2>Acervo e documentação</h2>
+      <p class="intro">
+        Um espaço destinado à organização de documentos, registros, referências bibliográficas e materiais históricos relacionados à Amazônia.
+      </p>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="section-label">Quem somos</div>
+      <h2>Sobre o Arquivos da Amazônia</h2>
+      <p>
+        Um projeto independente de pesquisa, história e documentação sobre a Amazônia, sua biodiversidade, seus povos e sua memória.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Arquivos da Amazônia © 2026<br>
+    Pesquisa, memória e conhecimento.
+  </footer>
+
+</body>
+</html>
